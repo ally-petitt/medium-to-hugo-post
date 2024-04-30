@@ -122,12 +122,12 @@ if __name__ == "__main__":
     Collect user arguments and parse the md files for 
     """
 
-    parser = argparse.ArgumentParser(description='Convert Markdown Format into a Hugo Post')
+    parser = argparse.ArgumentParser(description='Convert markdown files into a Hugo-compatible post')
 
     parser.add_argument('--md-dir', type=str, required=True,
-                    help='Md directory from medium-to-markdown output folder')
+                    help='md directory from medium-to-markdown output folder')
     parser.add_argument('--posts-dir', default='content/posts', type=str, required=False,
-                    help='Posts directory of Hugo application to store the converted files')
+                    help='posts directory of Hugo application where the converted files will be stored')
     
 
     args = parser.parse_args()
